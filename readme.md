@@ -3,11 +3,11 @@
 All [NeetCode 250](https://neetcode.io/practice/practice/neetcode250) problems solved in Go.
 Each file holds one problem; the file name is `<position>-<leetcode-slug>.go`.
 
-**Progress:** 8 / 250 solved
+**Progress:** 12 / 250 solved
 
 | Category | Solved | Total |
 | --- | --- | --- |
-| [Arrays & Hashing](#arrays--hashing) | 7 | 22 |
+| [Arrays & Hashing](#arrays--hashing) | 11 | 22 |
 | [Two Pointers](#two-pointers) | 0 | 13 |
 | [Sliding Window](#sliding-window) | 0 | 9 |
 | [Stack](#stack) | 1 | 15 |
@@ -58,10 +58,10 @@ Each file holds one problem; the file name is `<position>-<leetcode-slug>.go`.
 | 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | Easy | ✅ [`05-longest-common-prefix.go`](./Array-and-hashing/05-longest-common-prefix.go) |
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium | ✅ [`06-group-anagrams.go`](./Array-and-hashing/06-group-anagrams.go) |
 | 27 | [Remove Element](https://leetcode.com/problems/remove-element/) | Easy | ✅ [`07-remove-element.go`](./Array-and-hashing/07-remove-element.go) |
-| 169 | [Majority Element](https://leetcode.com/problems/majority-element/) | Easy | ⬜ [`08-majority-element.go`](./Array-and-hashing/08-majority-element.go) |
-| 705 | [Design HashSet](https://leetcode.com/problems/design-hashset/) | Easy | ⬜ [`09-design-hashset.go`](./Array-and-hashing/09-design-hashset.go) |
-| 706 | [Design HashMap](https://leetcode.com/problems/design-hashmap/) | Easy | ⬜ [`10-design-hashmap.go`](./Array-and-hashing/10-design-hashmap.go) |
-| 912 | [Sort an Array](https://leetcode.com/problems/sort-an-array/) | Medium | ⬜ [`11-sort-an-array.go`](./Array-and-hashing/11-sort-an-array.go) |
+| 169 | [Majority Element](https://leetcode.com/problems/majority-element/) | Easy | ✅ [`08-majority-element.go`](./Array-and-hashing/08-majority-element.go) |
+| 705 | [Design HashSet](https://leetcode.com/problems/design-hashset/) | Easy | ✅ [`09-design-hashset.go`](./Array-and-hashing/09-design-hashset.go) |
+| 706 | [Design HashMap](https://leetcode.com/problems/design-hashmap/) | Easy | ✅ [`10-design-hashmap.go`](./Array-and-hashing/10-design-hashmap.go) |
+| 912 | [Sort an Array](https://leetcode.com/problems/sort-an-array/) | Medium | ✅ [`11-sort-an-array.go`](./Array-and-hashing/11-sort-an-array.go) |
 | 75 | [Sort Colors](https://leetcode.com/problems/sort-colors/) | Medium | ⬜ [`12-sort-colors.go`](./Array-and-hashing/12-sort-colors.go) |
 | 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Medium | ⬜ [`13-top-k-frequent-elements.go`](./Array-and-hashing/13-top-k-frequent-elements.go) |
 | — | [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) | Medium | ⬜ [`14-encode-and-decode-strings.go`](./Array-and-hashing/14-encode-and-decode-strings.go) |

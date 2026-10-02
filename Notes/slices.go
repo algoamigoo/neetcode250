@@ -4,7 +4,7 @@
 
 // 1. BASICS & DECLARATION
 // - A slice is a dynamic view of an underlying array (pointer + length + capacity).
-s1 := []int{1, 2, 3, 4}           // Literal syntax
+s1 := []int{1, 2, 3, 4}          // Literal syntax
 s2 := make([]int, length, cap)    // Using make()
 // len = current number of elements | cap = max size before memory reallocation
 
@@ -37,3 +37,17 @@ emptySlice := []int{}             // len = 0, cap = 0, not nil
 // *Both are safe to use with append().
 
 //append vs Strings: append() is only for slices. For strings, you use string concatenation (+=).
+
+
+// 6. REMOVING AN ELEMENT FROM A SLICE (Idiomatic Pattern)
+// - To remove an element at index 'i' efficiently:
+s = append(s[:i], s[i+1:]...)
+
+// *Why this one-liner is superior to multi-step approaches:
+//   - Prevents Bounds Panic: Truncating early (s[:i]) instantly shrinks length, 
+//     making s[i+1:] trigger a "slice bounds out of range" panic. This evaluates 
+//     both parts using the original length atomically.
+//   - Correct Type Handling: The '...' spread operator unpacks the right-side 
+//     sub-slice so append() accepts it item-by-item instead of throwing a type error.
+//   - Clean & Idiomatic: Avoids extra temporary variables (like 'remaining') and 
+//     keeps code concise.
